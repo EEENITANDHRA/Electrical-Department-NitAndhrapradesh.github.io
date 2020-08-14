@@ -37,6 +37,9 @@
 		background: rgb(140,45,1,.5);
 		border: 2px solid rgb(140,45,1);
 	}
+	#eeea-footer .eeea-footer-top  .eeea-footer-top-area .eeea-footer-widget address p {
+		font-size: 11px;
+	}
 </style>
 
 
@@ -605,6 +608,47 @@ gallery.querySelectorAll('.gallery-item').forEach(function (item) {
     </div>
     <!-- end footer bottom -->
 </footer>
+<a href="#top" class="to-top"><i class="fa fa-chevron-up"></i></a>
+<style>
+	.to-top{	
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background:darkorange;
+		color: #fff;
+		padding: 9px 12px;
+		border-radius: 100%;
+		cursor: pointer;
+		font-size: 15px; 
+
+	}
+	
+	.to-top:hover{
+		background: #d7d7d7;
+		color:rgba(130,45,16);
+		}
+		html{
+			scroll-behavior: smooth;
+		}
+</style>
+<script>
+	$(document).ready(function(){
+		var offset = 250;
+		var duration = 500;
+
+		$(window).scroll(function(){
+			if($(this).scrollTop() > offset){
+				$('.to-top').fadeIn(duration);
+			}else{
+				$('.to-top').fadeOut(duration);
+			}
+		});
+		$('.to-top').click(function(){
+			$('body').animate({scrollTop: 0}, duration);
+		})
+	});
+</script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
