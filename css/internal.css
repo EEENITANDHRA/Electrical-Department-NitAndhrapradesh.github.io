@@ -1301,7 +1301,24 @@ font-weight: 400;
    color: rgba(186,7,21);
    border: 2px solid rgba(186,7,21);
    margin-bottom: 5px;
-  }
+}
+.green:active{
+		background: darken(#fff,100%);
+		box-shadow: 0 4px 17px rgba(0,0,0,0.2);
+		transform: translate3d(0, -3px, 0);
+	}
+
+.yellow:active{
+		background: darken(#fff,100%);
+		box-shadow: 0 4px 17px rgba(0,0,0,0.2);
+		transform: translate3d(0, -3px, 0);
+	}
+
+.red:active{
+		background: darken(#fff,100%);
+		box-shadow: 0 4px 17px rgba(0,0,0,0.2);
+		transform: translate3d(0, -3px, 0);
+	}
   @media(max-width: 795px){
   .background{
   overflow: hidden;
